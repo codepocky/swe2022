@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "demoAgent" //node's label
+        label "testAgent" //node's label
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'last test'
+                echo 'update'
             }
         }
         stage('Deploy') {

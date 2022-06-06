@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "demoAgent" //node's label
+    }
 
     stages {
         stage('Build') {
@@ -9,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                build 'SeleniumMaven'
+                echo '2022-06-07-02-39'
             }
         }
         stage('Deploy') {

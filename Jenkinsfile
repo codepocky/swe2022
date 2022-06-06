@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'final test'
+                echo 'ngrok test'
             }
         }
         stage('Deploy') {

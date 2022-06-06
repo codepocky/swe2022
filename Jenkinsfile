@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'update'
+                echo 'update again'
             }
         }
         stage('Deploy') {
